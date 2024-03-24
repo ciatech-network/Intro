@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-color: #001F3F; /* Dark Navy Blue */
+            color: #ffffff;
+        }
+        nav {
+            background: linear-gradient(90deg, rgba(0,31,63,1) 0%, rgba(5,150,255,1) 100%);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav ul li a {
+            color: white;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .grid {
+            gap: 2rem;
+        }
+        hgroup h2, hgroup h3 {
+            font-family: 'Courier New', Courier, monospace; /* Hacker Terminal Font */
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid"><ul><li><strong>CIATech</strong></li></ul><ul><li><a href="#">Introduction</a></li><li><a href="#contact">Contact Us</a></li></ul></nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to CIATech</h2>
+                    <h3>Your Cyber Security Partners</h3>
+                </hgroup>
+                <p>We are a dedicated group of cyber security experts committed to making the digital world safer for researchers and businesses alike. Our goal is to equip our partners with the tools and knowledge needed to secure their digital assets effectively.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/random/?cyber,terminal" alt="Cyber security terminal" />
+                    <figcaption>Our work in action</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Contact Us" id="contact">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Contact CIATech</h2>
+                    <h3>Get in Touch</h3>
+                </hgroup>
+                <p>Email: contact@ciatech.net<br>Bengaluru, India - 560078</p>
+            </article>
+        </div>
+    </section>
+    <footer class="container"><small><a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a></small></footer>
+</body>
+</html>
