@@ -18,16 +18,25 @@
       font-family: Arial, sans-serif;
     }
 
+    /* Loader container */
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     /* Loading spinner */
     .loader {
       border: 8px solid #1a1a1a; /* Dark border color */
       border-top: 8px solid #00ff00; /* Green border for the animation */
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       animation: spin 1s linear infinite;
     }
 
+    /* Animation for the spinner */
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -38,19 +47,29 @@
       margin-top: 20px;
       font-size: 1.2em;
       color: #00ff00; /* Green text color */
-      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media (min-width: 768px) {
+      .loader {
+        width: 80px;
+        height: 80px;
+      }
+      .loading-text {
+        font-size: 1.5em;
+      }
     }
   </style>
   <script>
-    // Redirect after 5 seconds
+    // Redirect after 3 seconds
     setTimeout(() => {
       window.location.replace("https://www.ciatech.net");
-    }, 5000);
+    }, 3000);
   </script>
 </head>
 <body>
   <!-- Loader animation and loading text -->
-  <div>
+  <div class="loader-container">
     <div class="loader"></div>
     <div class="loading-text">Loading, please wait...</div>
   </div>
